@@ -1,0 +1,12 @@
+'pt-BR':
+      flash:
+        actions:
+          create:
+            notice: '%{resource_name} foi criado com sucesso.'
+            alert: 'Não foi possível criar %{resource_name}. Verifique seu formulário antes de continuar.'
+          update:
+            notice: '%{resource_name} foi atualizado com sucesso.'
+            alert: 'Não foi possível atualizar %{resource_name}. Verifique seu formulário antes de continuar.'
+          destroy:
+            notice: '%{resource_name} foi excluído com sucesso.'
+            alert: 'Não foi possível excluir %{resource_name}.'
