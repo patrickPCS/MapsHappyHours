@@ -1,0 +1,13 @@
+= simple_form_for @cadastro_comercio, :html => { :class => 'form-horizontal' } do |f|
+  = f.input :nome
+  = f.error_span :nome
+  = f.input :tipo
+  = f.error_span :tipo
+  = f.input :endereco
+  = f.error_span :endereco
+  = f.input :telefone
+  = f.error_span :telefone
+  = f.input :avaliacao
+  = f.error_span :avaliacao
+  = f.button :submit, :class => 'btn-primary'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), cadastro_comercios_path, :class => 'btn btn-default'
