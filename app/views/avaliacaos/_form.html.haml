@@ -1,0 +1,11 @@
+= simple_form_for(@avaliacao) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :alimentacao, label: "Alimentação"
+    = f.input :atendimento
+    = f.input :ambiente
+    = f.association :comercio
+
+  .form-actions
+    = f.submit "Salvar"

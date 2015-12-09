@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Alimentação:
+  = @avaliacao.alimentacao
+%p
+  %b Atendimento:
+  = @avaliacao.atendimento
+%p
+  %b Ambiente:
+  = @avaliacao.ambiente
+%p
+  %b Comercio:
+  = @avaliacao.comercio
+
+= link_to 'Edit', edit_avaliacao_path(@avaliacao)
+\|
+= link_to 'Back', avaliacaos_path

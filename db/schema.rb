@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151208231229) do
+ActiveRecord::Schema.define(version: 20151209144032) do
+
+  create_table "avaliacaos", force: :cascade do |t|
+    t.float    "alimentacao"
+    t.float    "atendimento"
+    t.float    "ambiente"
+    t.integer  "comercio_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "avaliacaos", ["comercio_id"], name: "index_avaliacaos_on_comercio_id"
 
   create_table "cadastro_comercios", force: :cascade do |t|
     t.string   "nome"

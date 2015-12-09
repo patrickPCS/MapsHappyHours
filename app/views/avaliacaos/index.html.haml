@@ -1,0 +1,27 @@
+%h1 Listing avaliacaos
+
+%table
+  %thead
+    %tr
+      %th Alimentacao
+      %th Atendimento
+      %th Ambiente
+      %th Comercio
+      %th
+      %th
+      %th
+
+  %tbody
+    - @avaliacaos.each do |avaliacao|
+      %tr
+        %td= avaliacao.alimentacao
+        %td= avaliacao.atendimento
+        %td= avaliacao.ambiente
+        %td= avaliacao.comercio
+        %td= link_to 'Show', avaliacao
+        %td= link_to 'Edit', edit_avaliacao_path(avaliacao)
+        %td= link_to 'Excluir', avaliacao, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Avaliacao', new_avaliacao_path
