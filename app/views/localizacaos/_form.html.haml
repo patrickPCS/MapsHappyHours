@@ -1,0 +1,10 @@
+= simple_form_for(@localizacao) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :latitude
+    = f.input :longitude
+    = f.input :elevacao, label:"Elevação"
+
+  .form-actions
+    = f.submit "Salvar"

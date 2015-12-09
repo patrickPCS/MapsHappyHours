@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151209144032) do
+ActiveRecord::Schema.define(version: 20151209162802) do
 
   create_table "avaliacaos", force: :cascade do |t|
     t.float    "alimentacao"
@@ -63,6 +63,14 @@ ActiveRecord::Schema.define(version: 20151209144032) do
   create_table "facebooks", force: :cascade do |t|
     t.string   "email"
     t.string   "senha"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "localizacaos", force: :cascade do |t|
+    t.decimal  "latitude"
+    t.decimal  "longitude"
+    t.float    "elevacao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

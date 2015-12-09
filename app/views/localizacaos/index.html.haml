@@ -1,0 +1,25 @@
+%h1 Listing localizacaos
+
+%table
+  %thead
+    %tr
+      %th Latitude
+      %th Longitude
+      %th Elevacao
+      %th
+      %th
+      %th
+
+  %tbody
+    - @localizacaos.each do |localizacao|
+      %tr
+        %td= localizacao.latitude
+        %td= localizacao.longitude
+        %td= localizacao.elevacao
+        %td= link_to 'Show', localizacao
+        %td= link_to 'Edit', edit_localizacao_path(localizacao)
+        %td= link_to 'Excluir', localizacao, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Localizacao', new_localizacao_path

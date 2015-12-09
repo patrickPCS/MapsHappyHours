@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :localizacaos
   resources :avaliacaos
   resources :usuarios
   resources :facebooks

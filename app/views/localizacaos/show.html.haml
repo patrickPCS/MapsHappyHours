@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Latitude:
+  = @localizacao.latitude
+%p
+  %b Longitude:
+  = @localizacao.longitude
+%p
+  %b Elevação:
+  = @localizacao.elevacao
+
+= link_to 'Edit', edit_localizacao_path(@localizacao)
+\|
+= link_to 'Back', localizacaos_path
