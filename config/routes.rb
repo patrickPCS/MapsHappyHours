@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :cadastro_comercios
-  resources :cadastro_facebooks
-  resources :cadastros
+  resources :usuarios
+  resources :facebooks
+  resources :comercios
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

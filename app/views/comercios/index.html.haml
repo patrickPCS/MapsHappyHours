@@ -1,0 +1,27 @@
+%h1 Lista de Comercios
+
+%table
+  %thead
+    %tr
+      %th Nome
+      %th Endereco
+      %th Tipo
+      %th Tefefone
+      %th
+      %th
+      %th
+
+  %tbody
+    - @comercios.each do |comercio|
+      %tr
+        %td= comercio.nome
+        %td= comercio.endereco
+        %td= comercio.tipo
+        %td= comercio.tefefone
+        %td= link_to 'Show', comercio
+        %td= link_to 'Edit', edit_comercio_path(comercio)
+        %td= link_to 'Excluir', comercio, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Comercio', new_comercio_path

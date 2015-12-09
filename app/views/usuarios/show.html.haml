@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @usuario.nome
+%p
+  %b Email:
+  = @usuario.email
+%p
+  %b Data Nascimento:
+  = @usuario.DataNascimento
+%p
+  %b Senha: 
+  = @usuario.senha
+%p
+  %b Confirme Senha:
+  = @usuario.ConfirmeSenha
+
+= link_to 'Edit', edit_usuario_path(@usuario)
+\|
+= link_to 'Back', usuarios_path

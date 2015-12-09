@@ -1,0 +1,9 @@
+= simple_form_for(@facebook) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :email
+    = f.input :senha
+
+  .form-actions
+    = f.submit "Salvar"

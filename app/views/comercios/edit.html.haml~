@@ -1,0 +1,7 @@
+%h1 Editar comercio
+
+= render 'form'
+
+= link_to 'Show', @comercio
+\|
+= link_to 'Back', comercios_path

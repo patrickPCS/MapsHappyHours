@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Nome:
+  = @comercio.nome
+%p
+  %b Endereço:
+  = @comercio.endereco
+%p
+  %b Tipo:
+  = @comercio.tipo
+%p
+  %b Telefone:
+  = @comercio.tefefone
+
+= link_to 'Edit', edit_comercio_path(@comercio)
+\|
+= link_to 'Back', comercios_path

@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Email:
+  = @facebook.email
+%p
+  %b Senha:
+  = @facebook.senha
+
+= link_to 'Edit', edit_facebook_path(@facebook)
+\|
+= link_to 'Back', facebooks_path

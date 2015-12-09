@@ -1,0 +1,23 @@
+%h1 Listing facebooks
+
+%table
+  %thead
+    %tr
+      %th Email
+      %th Senha
+      %th
+      %th
+      %th
+
+  %tbody
+    - @facebooks.each do |facebook|
+      %tr
+        %td= facebook.email
+        %td= facebook.senha
+        %td= link_to 'Show', facebook
+        %td= link_to 'Edit', edit_facebook_path(facebook)
+        %td= link_to 'Excluir, facebook, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Facebook', new_facebook_path

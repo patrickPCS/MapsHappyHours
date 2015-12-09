@@ -1,7 +1,0 @@
-= simple_form_for @cadastro_facebook, :html => { :class => 'form-horizontal' } do |f|
-  = f.input :email
-  = f.error_span :email
-  = f.input :senha
-  = f.error_span :senha
-  = f.button :submit, :class => 'btn-primary'
-  = link_to t('.cancel', :default => t("helpers.links.cancel")), cadastro_facebooks_path, :class => 'btn btn-default'
