@@ -5,7 +5,7 @@
     = f.input :alimentacao, label: "Alimentação"
     = f.input :atendimento
     = f.input :ambiente
-    = f.association :comercio
+    = f.association :comercio, label_method: :nome
 
   .form-actions
     = f.submit "Salvar"

@@ -17,7 +17,7 @@
         %td= avaliacao.alimentacao
         %td= avaliacao.atendimento
         %td= avaliacao.ambiente
-        %td= avaliacao.comercio
+        %td= avaliacao.comercio.nome
         %td= link_to 'Show', avaliacao
         %td= link_to 'Edit', edit_avaliacao_path(avaliacao)
         %td= link_to 'Excluir', avaliacao, :method => :delete, :data => { :confirm => 'Are you sure?' }
