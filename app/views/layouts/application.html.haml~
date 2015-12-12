@@ -25,26 +25,21 @@
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        %a.navbar-brand(href="#") Mapshappyhours
+        %a.navbar-brand(href="/") Mapshappyhours
         .navbar-collapse.collapse.navbar-responsive-collapse
           %ul.nav.navbar-nav
-            %li= link_to "Link 1", "/path1"
-            %li= link_to "Link 2", "/path2"
-            %li= link_to "Link 3", "/path3"
-            %li= link_to "Link 3", "/path3"
-
+            %li= link_to "Início", "/"
+            %li= link_to "Cadastro de usuarios", "/usuarios"
+            %li= link_to "Cadastro Facebook", "/facebooks"
+            %li= link_to "Cadastro Cormécio", "/comercios"
+            %li= link_to "Cadastro Avaliação", "/avaliacaos"
+            %li= link_to "Cadastro Avaliação", "/avaliacaos"
     .container
       .row
         .col-lg-9
           = bootstrap_flash
           = yield
         .col-lg-3
-          .well.sidebar-nav
-            %h3 Sidebar
-            %ul.nav.nav-list
-              %li.nav-header Sidebar
-              %li= link_to "Link 1", "/path1"
-              %li= link_to "Link 2", "/path2"
-              %li= link_to "Link 3", "/path3"
+          
       %footer
-        %p &copy; Company 2015
+        %p &copy; PCSilva Company 2015
